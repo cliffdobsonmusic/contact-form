@@ -7,6 +7,10 @@
   <title>Contact Form</title>
   <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;700&family=Nunito&display=swap" rel="stylesheet">
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     html, body {
       overflow-x: hidden;
       margin: 0;
@@ -93,16 +97,21 @@
     @media (max-width: 600px) {
       .contact-form {
         padding: 2rem;
+        margin: 2rem 1rem;
       }
+
       .contact-form h2 {
         font-size: 2rem;
       }
+
       label {
         font-size: 1.2rem;
       }
+
       input, textarea {
         font-size: 1.2rem;
       }
+
       button {
         font-size: 1.3rem;
       }
@@ -167,4 +176,3 @@
 
 </body>
 </html>
-
