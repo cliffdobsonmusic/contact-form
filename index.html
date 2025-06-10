@@ -6,117 +6,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Form</title>
   <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;700&family=Nunito&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
+<style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 
-    html, body {
-      overflow-x: hidden;
-      margin: 0;
-      padding: 0;
-      background: black;
-      color: white;
-      font-family: 'Nunito', sans-serif;
-    }
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+  }
 
+  .contact-form {
+    max-width: 900px;
+    margin: 5rem auto;
+    padding: 4rem 2rem;
+    background-color: #000;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  }
+
+  .contact-form h2 {
+    font-family: 'Kufam', cursive;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+  }
+
+  label {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 1.5rem;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.4rem;
+    resize: none;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #ff3b3b;
+    box-shadow: 0 0 8px #ff3b3b66;
+    outline: none;
+  }
+
+  button {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #BF100F;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Kufam', cursive;
+  }
+
+  button:hover {
+    background-color: #FF0000;
+  }
+
+  .thank-you-message {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .thank-you-message h2 {
+    font-family: 'Kufam', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #BF100F;
+  }
+
+  @media (max-width: 600px) {
     .contact-form {
-      max-width: 900px;
-      margin: 5rem auto;
-      padding: 4rem 2rem;
-      background-color: #000;
-      border-radius: 24px;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+      padding: 2rem 1rem;
+      margin: 2rem 1rem;
     }
 
     .contact-form h2 {
-      font-family: 'Kufam', cursive;
-      text-align: center;
-      font-size: 3rem;
-      margin-bottom: 3rem;
-      color: white;
+      font-size: 2rem;
     }
 
     label {
-      display: block;
-      margin-top: 2rem;
-      font-size: 1.5rem;
-      font-weight: 500;
+      font-size: 1.2rem;
     }
 
-    input, textarea {
-      width: 100%;
-      margin-top: 0.75rem;
-      padding: 1.5rem;
-      background-color: #111;
-      border: 1px solid #333;
-      border-radius: 12px;
-      color: #fff;
-      font-size: 1.4rem;
-      resize: none;
-    }
-
-    input:focus, textarea:focus {
-      border-color: #ff3b3b;
-      box-shadow: 0 0 8px #ff3b3b66;
-      outline: none;
+    input,
+    textarea {
+      font-size: 1.2rem;
     }
 
     button {
-      margin-top: 3rem;
-      width: 100%;
-      padding: 1.5rem;
-      background-color: #BF100F;
-      color: white;
-      font-weight: 700;
-      font-size: 1.6rem;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      font-family: 'Kufam', cursive;
+      font-size: 1.3rem;
     }
-
-    button:hover {
-      background-color: #FF0000;
-    }
-
-    .thank-you-message {
-      text-align: center;
-      padding: 4rem 2rem;
-      color: #fff;
-      font-family: 'Nunito', sans-serif;
-    }
-
-    .thank-you-message h2 {
-      font-family: 'Kufam', cursive;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #BF100F;
-    }
-
-    @media (max-width: 600px) {
-      .contact-form {
-        padding: 2rem;
-        margin: 2rem 1rem;
-      }
-
-      .contact-form h2 {
-        font-size: 2rem;
-      }
-
-      label {
-        font-size: 1.2rem;
-      }
-
-      input, textarea {
-        font-size: 1.2rem;
-      }
-
-      button {
-        font-size: 1.3rem;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
